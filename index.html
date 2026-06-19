@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine - Estrenos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">🎬 CINE</div>
+            <div class="button-group">
+                <button class="active" data-week="current">Estrenos Esta Semana</button>
+                <button data-week="previous">Estrenos Semana Anterior</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1 class="section-title" id="sectionTitle">Estrenos de Esta Semana</h1>
+        <div class="movies-grid" id="moviesGrid"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <div class="modal-text" id="modalText"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
