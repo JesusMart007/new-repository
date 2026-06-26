@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cine - Estrenos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -14,6 +15,7 @@
             <div class="button-group">
                 <button class="active" data-week="current">Estrenos Esta Semana</button>
                 <button data-week="previous">Estrenos Semana Anterior</button>
+                <button id="cinesCercanos">Cines Cercanos</button>
             </div>
         </div>
     </header>
@@ -22,6 +24,11 @@
     <div class="container">
         <h1 class="section-title" id="sectionTitle">Estrenos de Esta Semana</h1>
         <div class="movies-grid" id="moviesGrid"></div>
+        
+        <!-- Sección de Cines Cercanos -->
+        <div id="cinesSection" class="cines-section" style="display: none;">
+            <div class="cines-grid" id="cinesGrid"></div>
+        </div>
     </div>
 
     <!-- Modal -->
@@ -32,6 +39,42 @@
             <div class="modal-text" id="modalText"></div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quiénes Somos</h3>
+                <p>Somos una plataforma dedicada a traerte los estrenos cinematográficos más emocionantes de la semana. Descubre, disfruta y comparte tu pasión por el cine.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p>Email: <a href="mailto:info@cinetodoestrenos.com">info@cinetodoestrenos.com</a></p>
+                <p>Teléfono: +34 630775009</p>
+                <p>Dirección: Calle Principe, 31 - Aranjuez - España</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cine Estrenos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
